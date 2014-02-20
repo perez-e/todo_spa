@@ -12,6 +12,7 @@ class TodosController < ApplicationController
     todo = Todo.create(todo_params)
 
     respond_to do |f|
+      f.html { redirect_to "/" } 
       f.json { render :json => todo, only: [:id, :title, :completed] }
     end
   end
@@ -22,6 +23,7 @@ class TodosController < ApplicationController
     todo.destroy
 
     respond_to do |f|
+
       f.json { render :json => todo, only: [:id, :title, :completed] }
     end
   end

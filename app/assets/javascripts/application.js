@@ -16,3 +16,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+        // thats how you write 
+        //  Write your ajax post request
+        //     $.post("/todos.json", {todo: newTodo})
+        //         .done(function(data){
+        //             console.log(data);
+        //         });
