@@ -2,6 +2,6 @@
 <input type="checkbox" 
        {{#if completed}} checked {{/if}} 
        name="completed"> 
-{{title}}
+<a href="/todos/{{id}}" class="spa-route" >{{title}}</a>
 </label>
 <button class="removeTodo">delete</button>
